@@ -57,7 +57,7 @@ public class Music {
     public User getSinger(){return this.singer;}
 
     //setters
-    public void setSinger(User singer){this.singer = singer;}
-    public void setTitle(String title) {this.title = title;}
-    public void setNumberOfStream(int numberOfStream) {this.numberOfStream = numberOfStream;}
+    private void setSinger(User singer){this.singer = singer;}
+    private void setTitle(String title) {this.title = title;}
+    private void setNumberOfStream(int numberOfStream) {this.numberOfStream = numberOfStream;}
 }
