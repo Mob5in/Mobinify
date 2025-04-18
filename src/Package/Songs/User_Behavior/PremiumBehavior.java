@@ -12,11 +12,13 @@ public class PremiumBehavior implements UserBehavior{
         this.month = month;
     }
 
+
     @Override
     public void createPlaylist(String title, User owner) throws InvalidOperationException {
         Playlist newPlaylist = new Playlist(title, owner);
         owner.getPlaylists().add(newPlaylist);
     }
+
 
     @Override
     public void playMusic(Music music) throws InvalidOperationException {
@@ -28,11 +30,9 @@ public class PremiumBehavior implements UserBehavior{
         setMonth(month + getMonth());
     }
 
-    public int getMonth() {
-        return month;
-    }
 
-    public void setMonth(int month) {
-        this.month = month;
-    }
+
+    public int getMonth() {return month;}
+
+    public void setMonth(int month) {this.month = month;}
 }

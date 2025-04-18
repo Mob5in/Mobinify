@@ -12,9 +12,6 @@ public class Music {
     private int numberOfStream;
 
 
-    public String getTitle() {
-        return title;
-    }
 
     public static void play(Music music){
         System.out.println("The "+music.title+" is playing");
@@ -25,15 +22,11 @@ public class Music {
 
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    //getters
+    public String getTitle() {return title;}
+    public int getNumberOfStream() {return numberOfStream;}
 
-    public int getNumberOfStream() {
-        return numberOfStream;
-    }
-
-    public void setNumberOfStream(int numberOfStream) {
-        this.numberOfStream = numberOfStream;
-    }
+    //setters
+    public void setTitle(String title) {this.title = title;}
+    public void setNumberOfStream(int numberOfStream) {this.numberOfStream = numberOfStream;}
 }

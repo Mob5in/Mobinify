@@ -37,11 +37,9 @@ public class Playlist {
 
     }
 
-    public String getTitle() {
-        return title;
-    }
+    //getters
+    public String getTitle() {return title;}
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    //setters
+    public void setTitle(String title) {this.title = title;}
 }

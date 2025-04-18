@@ -35,12 +35,9 @@ public class RegularBehavior implements UserBehavior{
     }
 
 
-    public int getPlayinglimit() {
-        return playinglimit;
-    }
+    //getters
+    public int getPlayinglimit() {return playinglimit;}
 
-
-    public void setPlayinglimit(int playinglimit) {
-        this.playinglimit = playinglimit;
-    }
+    //setters
+    public void setPlayinglimit(int playinglimit) {this.playinglimit = playinglimit;}
 }

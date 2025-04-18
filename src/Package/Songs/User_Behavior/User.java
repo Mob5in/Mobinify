@@ -37,51 +37,21 @@ public class User {
         User.allUsers = allUsers;
     }
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    // getters
+    public String getUsername() {return username;}
+    public String getPassword() {return Password;}
+    public ArrayList<User> getFollowerList() {return followerList;}
+    public ArrayList<User> getFollowingList() {return followingList;}
+    public UserBehavior getBehavior() {return behavior;}
+    public ArrayList<Playlist> getPlaylists() {return playlists;}
 
-    public String getPassword() {
-        return Password;
-    }
+    //setters
+    public void setUsername(String username) {this.username = username;}
+    public void setPassword(String password) {Password = password;}
+    public void setFollowerList(ArrayList<User> followerList) {this.followerList = followerList;}
+    public void setFollowingList(ArrayList<User> followingList) {this.followingList = followingList;}
+    public void setBehavior(UserBehavior behavior) {this.behavior = behavior;}
+    public void setPlaylists(ArrayList<Playlist> playlists) {this.playlists = playlists;}
 
-    public void setPassword(String password) {
-        Password = password;
-    }
-
-    public ArrayList<User> getFollowerList() {
-        return followerList;
-    }
-
-    public void setFollowerList(ArrayList<User> followerList) {
-        this.followerList = followerList;
-    }
-
-    public ArrayList<User> getFollowingList() {
-        return followingList;
-    }
-
-    public void setFollowingList(ArrayList<User> followingList) {
-        this.followingList = followingList;
-    }
-
-    public UserBehavior getBehavior() {
-        return behavior;
-    }
-
-    public void setBehavior(UserBehavior behavior) {
-        this.behavior = behavior;
-    }
-
-    public ArrayList<Playlist> getPlaylists() {
-        return playlists;
-    }
-
-    public void setPlaylists(ArrayList<Playlist> playlists) {
-        this.playlists = playlists;
-    }
 }
