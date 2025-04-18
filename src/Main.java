@@ -2,7 +2,6 @@ import Package.Songs.*;
 import Package.Songs.Exceptions.InvalidOperationException;
 import Package.Songs.User_Behavior.User;
 
-import java.util.TreeMap;
 
 
 public class Main {
@@ -114,7 +113,5 @@ public class Main {
         }catch (InvalidOperationException e){
             System.out.println("Error: "+ e.getMessage());
         }
-
-
     }
 }
