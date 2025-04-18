@@ -21,9 +21,11 @@ public class Playlist {
     }
 
     public void editTitle(String newTitle, String password) throws InvalidOperationException {
+
         if(!Objects.equals(owner.getPassword(), password)){
             throw new InvalidOperationException("Wrong password");
         }
+
         this.setTitle(newTitle);
     }
 
@@ -32,29 +34,37 @@ public class Playlist {
         if(!Objects.equals(this.owner.getPassword(), password)){
             throw new InvalidOperationException("Wrong password");
         }
+
         playlist.add(music);
     }
 
     public void removeMusic(Music music, String password) throws InvalidOperationException {
+
         if(!Objects.equals(this.owner.getPassword(), password)){
             throw new InvalidOperationException("Wrong password");
         }
+
         if(this.playlist.contains(music)){
             this.playlist.remove(music);
         }else{
             throw new InvalidOperationException("the music is not in the play list at all");
         }
     }
+
+
     public ArrayList<Music> searchInPlaylist(String title) throws InvalidOperationException {
+
         ArrayList<Music> findedMusic = new ArrayList<>();
         for(Music music: this.playlist){
             if(Objects.equals(music.getTitle(), title)){
                 findedMusic.add(music);
             }
         }
+
         if(findedMusic.isEmpty()){
             throw new InvalidOperationException("The music you are looking for is not in the playlist");
         }
+
         return findedMusic;
     }
 
@@ -66,11 +76,13 @@ public class Playlist {
                 return music;
             }
         }
+
         throw new InvalidOperationException("The music you are looking for we don't have");
     }
 
 
     public void playPlaylist(){
+
         for(Music music: this.playlist){
             Music.play(music);
         }
