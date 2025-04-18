@@ -22,7 +22,7 @@ public class PremiumBehavior implements UserBehavior{
 
     @Override
     public void playMusic(Music music) throws InvalidOperationException {
-
+        Music.play(music);
     }
 
     @Override
