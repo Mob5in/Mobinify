@@ -60,7 +60,7 @@ public class User {
     public ArrayList<User> getFollowingList() {return followingList;}
     public UserBehavior getBehavior() {return behavior;}
     public ArrayList<Playlist> getPlaylists() {return playlists;}
-    public ArrayList<User> getAllUsers() { return allUsers}
+    public ArrayList<User> getAllUsers() { return allUsers;}
     //setters
     public void setUsername(String username) throws InvalidOperationException {
         for(User user: allUsers){
