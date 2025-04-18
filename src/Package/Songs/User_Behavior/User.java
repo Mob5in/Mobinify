@@ -11,7 +11,7 @@ public class User {
     private ArrayList<User> followerList = new ArrayList<>();
     private ArrayList<User> followingList = new ArrayList<>();
     private UserBehavior behavior = new RegularBehavior();
-
+    private ArrayList<Playlist> playlists = new ArrayList<>();
 
     void follow (User user){
 
@@ -75,5 +75,13 @@ public class User {
 
     public void setBehavior(UserBehavior behavior) {
         this.behavior = behavior;
+    }
+
+    public ArrayList<Playlist> getPlaylists() {
+        return playlists;
+    }
+
+    public void setPlaylists(ArrayList<Playlist> playlists) {
+        this.playlists = playlists;
     }
 }
