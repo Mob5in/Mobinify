@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Music {
 
     //fields
-    static ArrayList<Music> allMusics;
+    static ArrayList<Music> allMusics = new ArrayList<>();
     private String title;
     private User singer;
     private int numberOfStream;

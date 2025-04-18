@@ -21,7 +21,6 @@ public class RegularBehavior implements UserBehavior{
     public void playMusic(Music music) throws InvalidOperationException {
 
         if(this.getPlayinglimit() > 0 ){
-            System.out.println("The "+music.getTitle()+" is playing");
             Music.play(music);
             this.setPlayinglimit( getPlayinglimit() - 1);
 

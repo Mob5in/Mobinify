@@ -25,33 +25,33 @@ public class User {
     }
 
 
-    void follow (User user) throws InvalidOperationException {
+    public void follow (User user) throws InvalidOperationException {
 
-        if(followerList.contains(user)){
+        if(followingList.contains(user)){
             throw new InvalidOperationException("You already have followed this user");
         }
         if(user == this){
             throw new InvalidOperationException("You cant follow yourself");
         }
 
-        this.followerList.add(user);
+        this.followingList.add(user);
         user.followerList.add(this);
 
     }
 
 
-    void createPlaylist (String Title, User Owner) throws InvalidOperationException {
-        this.behavior.createPlaylist(Title, Owner);
+    public void createPlaylist (String Title) throws InvalidOperationException {
+        this.behavior.createPlaylist(Title, this);
     }
 
 
-    void playMusic (Music music) throws InvalidOperationException {
+    public void playMusic (Music music) throws InvalidOperationException {
         this.behavior.playMusic(music);
     }
 
 
-    void buyPremium (User owner, int month) throws InvalidOperationException {
-        this.behavior.buyPremium(owner, month);
+    public void buyPremium (int month) throws InvalidOperationException {
+        this.behavior.buyPremium(this, month);
     }
 
 
