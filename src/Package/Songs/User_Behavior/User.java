@@ -1,6 +1,6 @@
-package User_Behavior;
-import Songs.*;
-import Exceptions.InvalidOperationException;
+package Package.Songs.User_Behavior;
+import Package.Songs.*;
+import Package.Songs.Exceptions.InvalidOperationException;
 import java.util.ArrayList;
 
 public class User {

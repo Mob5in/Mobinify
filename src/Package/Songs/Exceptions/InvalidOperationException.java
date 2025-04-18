@@ -1,4 +1,4 @@
-package Exceptions;
+package Package.Songs.Exceptions;
 
 public class InvalidOperationException extends Exception{
 

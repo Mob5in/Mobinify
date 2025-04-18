@@ -1,6 +1,6 @@
-package Songs;
+package Package.Songs;
 
-import User_Behavior.User;
+import Package.Songs.User_Behavior.User;
 
 import java.util.ArrayList;
 

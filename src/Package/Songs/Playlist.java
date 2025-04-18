@@ -1,4 +1,4 @@
-package Songs;
+package Package.Songs;
 
 public class Playlist {
 }

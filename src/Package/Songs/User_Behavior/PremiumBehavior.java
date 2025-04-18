@@ -1,7 +1,7 @@
-package User_Behavior;
+package Package.Songs.User_Behavior;
 
-import Exceptions.InvalidOperationException;
-import Songs.Music;
+import Package.Songs.Exceptions.InvalidOperationException;
+import Package.Songs.Music;
 
 public class PremiumBehavior implements UserBehavior{
 

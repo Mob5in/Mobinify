@@ -1,6 +1,6 @@
-package User_Behavior;
-import Exceptions.InvalidOperationException;
-import Songs.Music;
+package Package.Songs.User_Behavior;
+import Package.Songs.Exceptions.InvalidOperationException;
+import Package.Songs.Music;
 
 
 public interface UserBehavior {
