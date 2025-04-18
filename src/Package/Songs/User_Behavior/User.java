@@ -80,6 +80,7 @@ public class User {
         Password = password;
     }
 
+    public void setBehavior(UserBehavior behavior){ this.behavior = behavior;}
 
 
 }
