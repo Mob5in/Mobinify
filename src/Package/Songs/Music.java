@@ -8,11 +8,14 @@ import java.util.Objects;
 
 public class Music {
 
+    //fields
     static ArrayList<Music> allMusics;
     private String title;
     private User singer;
     private int numberOfStream;
 
+
+    //methods
     public Music(String title, User singer){
         setTitle(title);
         setSinger(singer);

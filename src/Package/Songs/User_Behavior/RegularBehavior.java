@@ -5,9 +5,12 @@ import Package.Songs.Music;
 
 public class RegularBehavior implements UserBehavior{
 
+    //fields
     private int playinglimit = 5;
 
 
+
+    //methods
     @Override
     public void createPlaylist(String Title, User Owner) throws InvalidOperationException {
         throw new InvalidOperationException("You cant create a playlist, you are a regular user. update to premium");

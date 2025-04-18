@@ -6,8 +6,11 @@ import Package.Songs.Playlist;
 
 public class PremiumBehavior implements UserBehavior{
 
+    //fields
     private int month;
 
+
+    //methods
     public PremiumBehavior(int month) {
         this.month = month;
     }

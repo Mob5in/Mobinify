@@ -6,6 +6,7 @@ import java.util.Objects;
 
 public class User {
 
+    //fields
     private static ArrayList<User> allUsers = new ArrayList<>();
     private String username;
     private String Password;
@@ -15,6 +16,7 @@ public class User {
     private ArrayList<Playlist> playlists = new ArrayList<>();
 
 
+    //methods
     public User(String username, String password) throws InvalidOperationException {
         setUsername(username);
         setPassword(password);
