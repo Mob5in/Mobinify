@@ -2,14 +2,20 @@ package Package.Songs.User_Behavior;
 
 import Package.Songs.Exceptions.InvalidOperationException;
 import Package.Songs.Music;
+import Package.Songs.Playlist;
 
 public class PremiumBehavior implements UserBehavior{
 
     private int month;
 
-    @Override
-    public void createPlaylist(String Title, User Owner) throws InvalidOperationException {
+    public PremiumBehavior(int month) {
+        this.month = month;
+    }
 
+    @Override
+    public void createPlaylist(String title, User owner) throws InvalidOperationException {
+        Playlist newPlaylist = new Playlist(title, owner);
+        owner.getPlaylists().add(newPlaylist);
     }
 
     @Override
